@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/themes.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="header">
+      <span class="header_title">calc</span>
+      <div class="header_left">
+        <span class="header_theme">theme</span>
+        <div class="toggle-switch" id="toggleSwitch">
+          <div class="toggle-option" data-value="1">1</div>
+          <div class="toggle-option" data-value="2">2</div>
+          <div class="toggle-option" data-value="3">3</div>
+          <div class="toggle-knob"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="display">
+      <span id="display">0</span>
+    </div>
+    <div class="buttons">
+      <button class='btn' onclick="appendNumber('7')">7</button>
+      <button class='btn' onclick="appendNumber('8')">8</button>
+      <button class='btn' onclick="appendNumber('9')">9</button>
+      <button class='btn del' onclick="deleteLast()">DEL</button>
+      <button class='btn' onclick="appendNumber('4')">4</button>
+      <button class='btn' onclick="appendNumber('5')">5</button>
+      <button class='btn' onclick="appendNumber('6')">6</button>
+      <button class='btn operator' onclick="appendOperator('+')">+</button>
+      <button class='btn' onclick="appendNumber('1')">1</button>
+      <button class='btn' onclick="appendNumber('2')">2</button>
+      <button class='btn' onclick="appendNumber('3')">3</button>
+      <button class='btn operator' onclick="appendOperator('-')">-</button>
+      <button class='btn' onclick="appendNumber('.')">.</button>
+      <button class='btn' onclick="appendNumber('0')">0</button>
+      <button class='btn operator' onclick="appendOperator('/')">/</button>
+      <button class='btn operator' onclick="appendOperator('*')">x</button>
+      <button class='btn reset' onclick="resetCalculator()">RESET</button>
+      <button class='btn equals' onclick="calculateResult()">=</button>
+
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
