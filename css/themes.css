@@ -7,7 +7,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	color: var(--color-text-light);
+	color: var(--color-text-header);
 	cursor: pointer;
 }
 
@@ -48,8 +48,9 @@
 	--color-key-shadow-tertiary: hsl(28, 16%, 65%);
 
 	/* Text Colors */
+	--color-text-header: hsl(30, 25%, 89%);
 	--color-text-dark: hsl(221, 14%, 31%);
-	--color-text-light: hsl(0, 0%, 100%);
+	--color-text-del-equals: hsl(0, 0%, 100%);
 }
 
 /* Theme 2 */
@@ -71,8 +72,9 @@
 	--color-key-shadow-tertiary: hsl(35, 11%, 61%);
 
 	/* Text Colors */
+	--color-text-header: hsl(60, 10%, 19%);
 	--color-text-dark: hsl(60, 10%, 19%);
-	--color-text-light: hsl(0, 0%, 100%);
+	--color-text-del-equals: hsl(0, 0%, 100%);
 }
 
 /* Theme 3 */
@@ -94,7 +96,7 @@
 	--color-key-shadow-tertiary: hsl(290, 70%, 36%);
 
 	/* Text Colors */
-	--color-text-dark: hsl(198, 20%, 13%);
-	--color-text-light: hsl(0, 0%, 100%);
-	--color-text-highlight: hsl(52, 100%, 62%);
+	--color-text-header: hsl(52, 100%, 62%);
+	--color-text-dark: hsl(52, 100%, 62%);
+	--color-text-del-equals: hsl(0, 0%, 100%);
 }
